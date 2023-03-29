@@ -1,0 +1,50 @@
+//Описание предметной области "Искусство"
+section_subject_domain_of_art <- sc_node_struct;;
+
+section_subject_domain_of_art 
+  => nrel_main_idtf: 
+    [Section. Subject domain of art] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Раздел. Предметная область искусства]
+    (* <- lang_ru;; *);;
+
+sc_node_struct ->
+    section_subject_domain_theatre;
+    section_subject_domain_cinema;
+    section_subject_domain_architecture;
+    section_subject_domain_painting;
+    section_subject_domain_graphics;
+    section_subject_domain_sculpture;
+    section_subject_domain_art;
+    section_subject_domain_art_and_applied_arts;
+    section_subject_domain_literature;
+    section_subject_domain_music;
+    section_subject_domain_choreography;
+    section_subject_domain_photography;;
+
+@sectionsArt = {
+	section_subject_domain_theatre;
+    section_subject_domain_cinema;
+    section_subject_domain_architecture;
+    section_subject_domain_painting;
+    section_subject_domain_graphics;
+    section_subject_domain_art;
+    section_subject_domain_sculpture;
+    section_subject_domain_art_and_applied_arts;
+    section_subject_domain_literature;
+    section_subject_domain_music;
+    section_subject_domain_choreography;
+    section_subject_domain_photography
+};;
+
+@sectionsArt => nrel_section_decomposition: section_subject_domain_of_art;; 
+
+section_subject_domain_of_art
+  -> rrel_key_sc_element:
+    concept_art;
+    concept_kind_of_art;
+    concept_style;
+    concept_human;
+    concept_year_of_foundation;;
+

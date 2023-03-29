@@ -1,0 +1,31 @@
+//Описание класса театр
+concept_theatre <- sc_node_class;;
+
+concept_theatre
+  => nrel_main_idtf: 
+    [Theatre] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Театр]
+    (* <- lang_ru;; *);;
+
+concept_theatre
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- sc_definition;;
+                => nrel_main_idtf: [Определение: Театр] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Definiton: Theatre] (* <- lang_en;; *);;
+            <- definiton;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Театр - искусство изображения драматических произведений на сцене.];;
+                    -> rrel_example:
+                        [Theater is the art of depicting dramatic works on stage.];;  
+                    -> rrel_example:
+                        [Театр - помещение, где происходят такие представления.];;   
+                    -> rrel_example:
+                        [The theater is the place where such performances take place.];;      
+                *);;
+        *);;

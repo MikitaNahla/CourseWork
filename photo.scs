@@ -1,0 +1,27 @@
+//Описание класса Фотоискусство
+concept_photo <- sc_node_class;;
+
+concept_photo
+  => nrel_main_idtf: 
+    [Photo] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Фотоискусство]
+    (* <- lang_ru;; *);;
+
+concept_photo
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- sc_definition;;
+                => nrel_main_idtf: [Определение: Фотоискусство] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Definiton: Photo] (* <- lang_en;; *);;
+            <- definiton;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Фотоискусство - основанное на технологиях фотографии искусство создания фотографии, отражающей творческое видение фотографа как художника.];;
+                    -> rrel_example:
+                        [Photographic art is the technology-based art of creating a photograph that reflects the creative vision of the photographer as an artist.];;
+                *);;
+        *);;

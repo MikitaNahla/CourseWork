@@ -1,0 +1,104 @@
+//Описание подразделов искусства
+section_subject_domain_theatre
+    => nrel_main_idtf: 
+      [Section. Subject domain of theatre] 
+      (* <- lang_en;; *); 
+    => nrel_main_idtf:  
+      [Раздел. Предметная область театрального искусства]
+      (* <- lang_ru;; *);;
+
+section_subject_domain_cinema
+    => nrel_main_idtf: 
+      [Section. Subject domain of cinema] 
+      (* <- lang_en;; *); 
+    => nrel_main_idtf:  
+      [Раздел. Предметная область киноискусства]
+      (* <- lang_ru;; *);;
+
+section_subject_domain_architecture
+    => nrel_main_idtf: 
+      [Section. Subject domain of architecture] 
+      (* <- lang_en;; *); 
+    => nrel_main_idtf:  
+      [Раздел. Предметная область архитектурного искусства]
+      (* <- lang_ru;; *);;
+
+section_subject_domain_painting
+    => nrel_main_idtf: 
+      [Section. Subject domain of painting] 
+      (* <- lang_en;; *); 
+    => nrel_main_idtf:  
+      [Раздел. Предметная область изобразительного искусства]
+      (* <- lang_ru;; *);;
+
+section_subject_domain_graphics
+    => nrel_main_idtf: 
+      [Section. Subject domain of graphics] 
+      (* <- lang_en;; *); 
+    => nrel_main_idtf:  
+      [Раздел. Предметная область графики]
+      (* <- lang_ru;; *);;      
+
+section_subject_domain_art
+    => nrel_main_idtf: 
+      [Section. Subject domain of art] 
+      (* <- lang_en;; *); 
+    => nrel_main_idtf:  
+      [Раздел. Предметная область живописи]
+      (* <- lang_ru;; *);;   
+
+section_subject_domain_sculpture
+    => nrel_main_idtf: 
+      [Section. Subject domain of sculpture] 
+      (* <- lang_en;; *); 
+    => nrel_main_idtf:  
+      [Раздел. Предметная область скульптурного искусства]
+      (* <- lang_ru;; *);;   
+
+section_subject_domain_art_and_applied_arts
+    => nrel_main_idtf: 
+      [Section. Subject domain of art & applied arts] 
+      (* <- lang_en;; *); 
+    => nrel_main_idtf:  
+      [Раздел. Предметная область декоративно-прикладного искусства]
+      (* <- lang_ru;; *);;  
+
+section_subject_domain_art_and_applied_arts
+    => nrel_main_idtf: 
+      [Section. Subject domain of art & applied arts] 
+      (* <- lang_en;; *); 
+    => nrel_main_idtf:  
+      [Раздел. Предметная область декоративно-прикладного искусства]
+      (* <- lang_ru;; *);;  
+
+section_subject_domain_literature
+    => nrel_main_idtf: 
+      [Section. Subject domain of literature] 
+      (* <- lang_en;; *); 
+    => nrel_main_idtf:  
+      [Раздел. Предметная область литературы]
+      (* <- lang_ru;; *);;  
+
+section_subject_domain_music
+    => nrel_main_idtf: 
+      [Section. Subject domain of music] 
+      (* <- lang_en;; *); 
+    => nrel_main_idtf:  
+      [Раздел. Предметная область музыки]
+      (* <- lang_ru;; *);;  
+
+section_subject_domain_choreography
+    => nrel_main_idtf: 
+      [Section. Subject domain of choreography] 
+      (* <- lang_en;; *); 
+    => nrel_main_idtf:  
+      [Раздел. Предметная область хореографии]
+      (* <- lang_ru;; *);;  
+
+section_subject_domain_photography
+    => nrel_main_idtf: 
+      [Section. Subject domain of photography] 
+      (* <- lang_en;; *); 
+    => nrel_main_idtf:  
+      [Раздел. Предметная область фотоискусства]
+      (* <- lang_ru;; *);;  
