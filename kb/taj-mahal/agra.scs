@@ -1,0 +1,10 @@
+//Город Агра
+agra <- concept_city;;
+
+agra 
+  => nrel_main_idtf: 
+    [Agra] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Агра]
+    (* <- lang_ru;; *);;

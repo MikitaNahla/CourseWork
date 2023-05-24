@@ -1,0 +1,66 @@
+concept_building -> winchester_cathedral;;
+winchester_cathedral
+    => nrel_architector:
+        walkekin;;
+
+winchester_cathedral
+    => nrel_style:
+        norman_architecture;;
+
+winchester_cathedral
+    => nrel_location:
+        winchester;;
+
+winchester
+    => nrel_location:
+        uk;;
+
+winchester_cathedral
+    => nrel_invention_year:
+        [1079—1093 гг.];;
+
+
+winchester_cathedral
+  => nrel_main_idtf: 
+    [Winchester Cathedral] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Винчестерский собор]
+    (* <- lang_ru;; *);;
+
+winchester_cathedral
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Винчестерский собор] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Winchester Cathedral] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Уинчестерский собор — центр Уинчестерской епархии, одна из крупнейших церквей в Европе, самая длинная
+                         среди готических. Посвящена Святой Троице, св. Петру, св. Павлу, а до Реформации св. Свитуну,
+                          епископу Уинчестерскому. Объект культурного наследия Англии 1-го класса.];;
+                    -> rrel_example:
+                        [Winchester Cathedral - the center of the Diocese of Winchester, one of the largest churches in Europe, the longest
+                         among the gothic. Dedicated to the Holy Trinity, St. Peter, St. Paul, and before the Reformation, St. Swithun,
+                          Bishop of Winchester. An English heritage site of the 1st class.];;      
+                *);;
+        *);;
+
+winchester_cathedral 
+    <-rrel_key_sc_element:
+        ...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Винчестерский собор)](*<-lang_ru;;*);
+		        [Pic. (Winchester Cathedral)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://winchester_cathedral.jpg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;

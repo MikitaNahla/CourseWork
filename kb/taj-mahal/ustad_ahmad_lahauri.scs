@@ -1,0 +1,49 @@
+//Описание Устада Ахмада Лахаури
+ustad_ahmad_lahauri <- concept_architect;;
+
+ustad_ahmad_lahauri 
+  => nrel_main_idtf: 
+    [Ustad Ahmad Lahauri] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Устад Ахмад Лахаури]
+    (* <- lang_ru;; *);;
+
+ustad_ahmad_lahauri
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Устад Ахмад Лахаури] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Ustad Ahmad Lahauri] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Устад Ахмад Лахаури — персо-таджикский архитектор из Бадахшана,
+                         главный архитектор Тадж-Махала и Лал-Кила в Индии.
+                          Его архитектура, представляющая собой сочетание персидского,
+                           индо-исламского и могольского архитектурных стилей, широко
+                            восхваляется во всём мире, а Тадж-Махал считается одним из семи чудес света.];; 
+                    -> rrel_example:
+                        [Ustad Ahmad Lakhauri - Persian-Tajik architect from Badakhshan,
+                         chief architect of the Taj Mahal and Lal Qila in India.
+                          Its architecture, which is a combination of Persian,
+                           Indo-Islamic and Mughal architectural styles, widely
+                            praised all over the world, and the Taj Mahal is considered one of
+                             the seven wonders of the world.];;
+                *);;
+        *);;
+
+ustad_ahmad_lahauri
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+                concept_architect;
+                taj_mahal;
+                india;
+                concept_style;
+                indo_islamic_architecture;
+                architecture_of_great_mughal;;
+        *);;

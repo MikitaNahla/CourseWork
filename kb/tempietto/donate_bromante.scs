@@ -1,0 +1,42 @@
+donate_bromante <- concept_architect;;
+
+donate_bromante
+  => nrel_main_idtf: 
+    [Donate Bromante] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Донато Броманте]
+    (* <- lang_ru;; *);;
+
+donate_bromante
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Донато Броманте] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Donate Bromante] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Донато Броманте — итальянский архитектор и живописец, крупнейший представитель архитектуры эпохи
+                         Высокого Возрождения, основоположник стилевого течения, именуемого «римским классицизмом начала XVI
+                          века».];; 
+                    -> rrel_example:
+                        [Donato Bromante - Italian architect and painter, the largest representative of the architecture of the era
+                         High Renaissance, the founder of the stylistic trend, called "Roman classicism of the beginning of the XVI
+                          century."];;
+                *);;
+        *);;
+
+donate_bromante
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              concept_architect;
+              concept_artist;
+              concept_style;
+              italy;;
+        *);;

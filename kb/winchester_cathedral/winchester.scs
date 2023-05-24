@@ -1,0 +1,9 @@
+winchester <- concept_city;;
+
+winchester 
+  => nrel_main_idtf: 
+    [Winchester] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Винчестер]
+    (* <- lang_ru;; *);;

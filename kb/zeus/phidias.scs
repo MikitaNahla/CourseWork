@@ -1,0 +1,38 @@
+phidias <- concept_architect;;
+
+phidias 
+  => nrel_main_idtf: 
+    [Phidias] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Фидий]
+    (* <- lang_ru;; *);;
+
+phidias
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Фидий] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Phidias] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Фидий — древнегреческий скульптор и архитектор,
+                         один из величайших художников периода высокой классики. Друг Перикла.];; 
+                    -> rrel_example:
+                        [Phidias, ancient Greek sculptor and architect
+                         one of the greatest artists of the high classic period. Friend of Pericles.];;
+                *);;
+        *);;
+
+phidias
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+                concept_architect;
+                concept_sculptor;
+                concept_artist;;
+        *);;

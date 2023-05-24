@@ -1,0 +1,9 @@
+rome <- concept_city;;
+
+rome 
+  => nrel_main_idtf: 
+    [Rome] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Рим]
+    (* <- lang_ru;; *);;

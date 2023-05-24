@@ -1,0 +1,80 @@
+concept_building -> zeusSt;;
+zeusSt
+    => nrel_architector:
+        phidias;;
+
+zeusSt
+    => nrel_style:
+        ancient_architecture;;
+
+zeusSt
+    => nrel_location:
+        olympia;;
+
+olympia
+    => nrel_location:
+        india;;
+
+zeusSt
+    => nrel_invention_year:
+        [430-е до н. э.];;
+
+
+zeusSt
+  => nrel_main_idtf: 
+    [Zeus temple in Olympia] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Храм Зевса в Олимпии]
+    (* <- lang_ru;; *);;
+
+zeusSt
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Храм Зевса в Олимпии] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Zeus in Olympia] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Храм Зевса в Олимпии — единственное из Семи чудес света, которое располагалось в материковой части
+                         Европы (в городе Олимпия). Статуя Зевса в Олимпии — третье чудо света Древнего мира. Была воздвигнута
+                          в V веке до нашей эры. Она была изготовлена из золота, дерева и слоновой кости, в так называемой
+                           хрисоэлефантинной технике. Мраморный храм Зевса превосходил по размерам все существовавшие на тот
+                            момент храмы.];;
+                    -> rrel_example:
+                        [The temple of Zeus at Olympia is the only one of the Seven Wonders of the World that was located on the mainland.
+                         Europe (in the city of Olympia). The statue of Zeus at Olympia is the third wonder of the ancient world. Was erected
+                          in the 5th century BC. It was made of gold, wood and ivory, in the so-called
+                           chrysoelephantine technique. The marble temple of Zeus surpassed in size all that existed at that time.
+                            moment temples.];;      
+                *);;
+        *);;
+
+zeusSt 
+    <-rrel_key_sc_element:
+        ...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Зевс в Олимпии)](*<-lang_ru;;*);
+		        [Pic. (Zeus in Olympia)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://zeusSt.jpeg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+zeusSt
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              concept_statue;
+              nrel_location;
+              olympia;
+              ancient_architecture;;
+        *);;

@@ -1,0 +1,9 @@
+olympia <- concept_city;;
+
+olympia 
+  => nrel_main_idtf: 
+    [Olympia] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Олимпия]
+    (* <- lang_ru;; *);;

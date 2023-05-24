@@ -1,0 +1,29 @@
+walkekin <- concept_architect;;
+
+walkekin 
+  => nrel_main_idtf: 
+    [Walkelin] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Уокелин]
+    (* <- lang_ru;; *);;
+
+walkekin
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Уокелин] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Walkelin] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Уокелин был благородного происхождения и был родственником Вильгельма Завоевателя, которому он служил
+                         королевским капелланом. До нормандского завоевания он, вероятно, был каноником в Руанском соборе.];; 
+                    -> rrel_example:
+                        [Walkelin was of noble birth and related to William the Conqueror, whom he served as a royal chaplain.
+                        Before the Norman Conquest he had probably been a canon at Rouen Cathedral.];;
+                *);;
+        *);;

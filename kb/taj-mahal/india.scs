@@ -1,0 +1,10 @@
+//Страна Индия
+india <- concept_country;;
+
+india 
+  => nrel_main_idtf: 
+    [India] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Индия]
+    (* <- lang_ru;; *);;

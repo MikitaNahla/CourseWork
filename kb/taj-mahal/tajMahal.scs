@@ -1,0 +1,79 @@
+//Описание Тадж Махала
+concept_building -> taj_mahal;;
+taj_mahal
+    => nrel_architector:
+        ustad_ahmad_lahauri;;
+
+taj_mahal
+    => nrel_style:
+        architecture_of_great_mughal;;
+
+taj_mahal
+    => nrel_location:
+        agra;;
+
+agra
+    => nrel_location:
+        india;;
+
+1653 <- number;;
+taj_mahal
+    => nrel_invention_year:
+        1653;;
+
+
+taj_mahal
+  => nrel_main_idtf: 
+    [Taj-Mahal] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Тадж-Махал]
+    (* <- lang_ru;; *);;
+
+taj_mahal
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Тадж-Махал] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Taj-Mahal] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Тадж-Махал - мавзолей-мечеть, находящийся в Агре, Индия, на берегу реки Джамна
+                        (архитекторы, вероятно, Устад-Иса и др.) Построен по приказу потомка Тамерлана,
+                        падишаха империи Великих Моголов Шах-Джахана, в память о жене Мумтаз-Махал,
+                        умершей при родах четырнадцатого ребёнка. Позже в мавзолее был похоронен и сам Шах-Джахан.];;
+                    -> rrel_example:
+                        [The Taj Mahal is a mausoleum-mosque located in Agra, India, on the banks of the Jumna River.
+                        (architects, probably Ustad-Isa and others) Built by order of a descendant of Tamerlane,
+                        Padishah of the Mughal Empire Shah Jahan, in memory of his wife Mumtaz Mahal,
+                        who died giving birth to her fourteenth child. Later, Shah Jahan himself was buried in the mausoleum.];;      
+                *);;
+        *);;
+
+taj_mahal 
+    <-rrel_key_sc_element:
+        ...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Тадж-Махал)](*<-lang_ru;;*);
+		        [Pic. (Taj-Mahal)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://taj_mahal.jpeg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+taj_mahal
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              agra;
+              india;
+              ustad_ahmad_lahauri;;  
+        *);;

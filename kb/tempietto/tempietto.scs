@@ -1,0 +1,78 @@
+concept_building -> tempietto;;
+tempietto
+    => nrel_architector:
+        donate_bromante;;
+
+tempietto
+    => nrel_style:
+        renaissance_architecture;;
+
+tempietto
+    => nrel_location:
+        rome;;
+
+rome
+    => nrel_location:
+        italy;;
+
+1502 <- number;;
+tempietto
+    => nrel_invention_year:
+        1502;;
+
+
+tempietto
+  => nrel_main_idtf: 
+    [Tempietto] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Темпьетто]
+    (* <- lang_ru;; *);;
+
+tempietto
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Темпьетто] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Tempietto] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Темпьетто (итал. Tempietto — Маленький храм, храмик) — отдельно стоящая капелла-ротонда,
+                         построенная архитектором Донато Браманте в 1502 году во дворе (кьостро) монастырского комплекса
+                          Сан-Пьетро-ин-Монторио («Святого Петра на золотой горе»), возведённого на римском холме Яникул 
+                          в районе Трастевере, на правом берегу Тибра, южнее Ватикана.];;
+                    -> rrel_example:
+                        [Tempietto (Italian Tempietto - Small temple, little temple) - a separate rotunda chapel,
+                         built by the architect Donato Bramante in 1502 in the courtyard (chiostro) of the monastery complex
+                          San Pietro in Montorio ("Saint Peter on the golden mountain"), erected on the Roman hill Janiculum
+                          in the Trastevere region, on the right bank of the Tiber, south of the Vatican.];;      
+                *);;
+        *);;
+
+tempietto 
+    <-rrel_key_sc_element:
+        ...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Темпьетто)](*<-lang_ru;;*);
+		        [Pic. (Tempietto)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://tempietto.jpeg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+tempietto
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+                concept_architect;
+                rome;;
+        *);;
