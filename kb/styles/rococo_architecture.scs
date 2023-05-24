@@ -1,0 +1,42 @@
+rococo_architecture <- concept_style;;
+
+rococo_architecture 
+  => nrel_main_idtf: 
+    [rococo_architecture] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [архитектура Возрождения]
+    (* <- lang_ru;; *);;
+
+rococo_architecture
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: архитектура Рококо] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: rococo architecture] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Архитектура Рококо — это направление в искусстве, зародившееся в начале XVIII века во Франции
+                         и быстро распространившееся по Европе благодаря художникам и публикациям французских архитекторов.
+                         ];;
+                        
+                    -> rrel_example:
+                        [Rococo architecture is an art movement that originated in France in the early 18th century.
+                         and quickly spread throughout Europe thanks to the artists and publications of French architects.
+                         ];;         
+                *);;
+        *);;
+
+rococo_architecture
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+                concept_architecture;
+                concept_art;
+                concept_artist;
+                concept_architect;;
+        *);;

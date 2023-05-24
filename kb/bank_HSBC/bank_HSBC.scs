@@ -1,0 +1,73 @@
+concept_building -> bank_HSBC;;
+bank_HSBC
+    => nrel_architector:
+        norman_foster;;
+
+bank_HSBC
+    => nrel_style:
+        high_tech_architecture;;
+
+bank_HSBC
+    => nrel_location:
+        honkong;;
+
+honkong
+    => nrel_location:
+        china;;
+
+bank_HSBC
+    => nrel_invention_year:
+        [1983—1985 гг.];;
+
+
+bank_HSBC
+  => nrel_main_idtf: 
+    [Bank HSBC] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Банк HSBC]
+    (* <- lang_ru;; *);;
+
+bank_HSBC
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Банк HSBC] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Bank HSBC] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Здание банка HSBC — здание головного офиса банка HSBC в Гонконге, располагающееся в районе Central
+                         в Гонконге. Находится на южной стороне Площади Статуи возле Сити-холла.];;
+                    -> rrel_example:
+                        [The HSBC Bank Building is the headquarters of HSBC Bank in Hong Kong, located in Central
+                         in Hong Kong. Located on the south side of Statue Square near City Hall.];;      
+                *);;
+        *);;
+
+bank_HSBC 
+    <-rrel_key_sc_element:
+        ...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Банк HSBC)](*<-lang_ru;;*);
+		        [Pic. (Bank HSBC)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://bank_HSBC.jpeg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+bank_HSBC
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              nrel_location;
+              concept_building;
+              honkong;; 
+        *);;

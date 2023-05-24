@@ -1,0 +1,82 @@
+concept_building -> durham_cathedral;;
+durham_cathedral
+    => nrel_architector:
+        james_wyatt;;
+
+durham_cathedral
+    => nrel_style:
+        norman_architecture;
+        romanian_architecture;;
+
+durham_cathedral
+    => nrel_location:
+        durham;;
+
+durham
+    => nrel_location:
+        uk;;
+
+1836 <- number;;
+durham_cathedral
+    => nrel_invention_year:
+        1836;;
+
+
+durham_cathedral
+  => nrel_main_idtf: 
+    [Durham Cathedral] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Даремский собор]
+    (* <- lang_ru;; *);;
+
+durham_cathedral
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Даремский собор] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Durham Cathedral] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Собор Христа, Пресвятой Девы Марии и св. Кутберта Даремского, коротко Даремский собор — главная
+                         церковь Даремской епархии, кафедральный собор епископа Даремского, место погребения св. Кутберта,
+                          первый в Великобритании памятник, внесённый (наряду с соседним Даремским замком) в число объектов
+                           Всемирного наследия. Представляет собой один из лучших образцов нормандского извода романского
+                            стиля. ];;
+                    -> rrel_example:
+                        [Cathedral of Christ, the Blessed Virgin Mary and St. Cuthbert of Durham, Durham Cathedral for short - main
+                         Church of the Diocese of Durham, Cathedral of the Bishop of Durham, burial place of St. Cuthbert,
+                          the first monument in the UK to be listed (along with neighboring Durham Castle) as a site
+                           World Heritage. It is one of the best examples of the Norman version of the Romanesque
+                            style.];;      
+                *);;
+        *);;
+
+durham_cathedral 
+    <-rrel_key_sc_element:
+        ...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Даремский собор)](*<-lang_ru;;*);
+		        [Pic. (Durham Cathedral)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://durham_cathedral.jpg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+durham_cathedral
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+                concept_style;
+                romanian_architecture;
+                norman_architecture;;
+        *);;

@@ -1,0 +1,9 @@
+paris <- concept_city;;
+
+paris 
+  => nrel_main_idtf: 
+    [Paris] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Париж]
+    (* <- lang_ru;; *);;

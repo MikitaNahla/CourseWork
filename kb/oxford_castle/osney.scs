@@ -1,0 +1,42 @@
+osney <- concept_architect;;
+
+osney 
+  => nrel_main_idtf: 
+    [Osney] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Осней]
+    (* <- lang_ru;; *);;
+
+osney
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Осней] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Osney] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Роберт Д'Ойли был английским дворянином XII века, сыном Найджела Д'Ойли и племянником Роберта Д'Ойли.
+                         основатель Оксфордского замка. Роберт женился на Эдит Форн, дочери лорда Грейстока, бывшего королем
+                          Наложница Генриха I Английского в 1120 году. Брак также означал, что Роберт стал лордом поместья.
+                           из Клейдона. ];; 
+                    -> rrel_example:
+                        [ Robert D'Oyly was a 12th-century English nobleman, son of Nigel D'Oyly, and nephew of Robert D'Oyly,
+                         founder of Oxford Castle. Robert married Edith Forne, daughter of Lord Greystoke, who had been King
+                          Henry I of England's concubine, in 1120. The marriage also meant Robert became Lord of the Manor
+                           of Cleydon.];;
+                *);;
+        *);;
+
+osney
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              uk;
+              oxford_castle;;
+        *);;

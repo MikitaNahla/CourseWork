@@ -1,0 +1,9 @@
+al_haram <- concept_city;;
+
+al_haram 
+  => nrel_main_idtf: 
+    [Al Haram] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Аль Харам]
+    (* <- lang_ru;; *);;

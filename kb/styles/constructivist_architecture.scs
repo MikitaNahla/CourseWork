@@ -1,0 +1,39 @@
+constructivist_architecture <- concept_style;;
+
+constructivist_architecture 
+  => nrel_main_idtf: 
+    [constructivist_architecture] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [архитектура Конструктивизма]
+    (* <- lang_ru;; *);;
+
+constructivist_architecture
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: архитектура Конструктивизма] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: constructivist architecture] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Конструктивистская архитектура была конструктивистским стилем современной архитектуры,
+                         который процветал в Советском Союзе в 1920-х и начале 1930-х годов.
+                         ];;
+                        
+                    -> rrel_example:
+                        [Constructivist architecture was a constructivist style of modern architecture,
+                         which flourished in the Soviet Union in the 1920s and early 1930s.];;         
+                *);;
+        *);;
+
+constructivist_architecture
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              concept_architecture;
+              concept_style;;  
+        *);;

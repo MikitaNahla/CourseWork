@@ -1,0 +1,36 @@
+renzo_piano <- concept_architect;;
+
+renzo_piano 
+  => nrel_main_idtf: 
+    [Renzo Piano] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Ренцо Пиано]
+    (* <- lang_ru;; *);;
+
+renzo_piano
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Ренцо Пиано] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Renzo Piano] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Ренцо Пиано — итальянский архитектор, постмодернист. ];; 
+                    -> rrel_example:
+                        [Renzo Piano is an Italian architect and postmodernist.];;
+                *);;
+        *);;
+
+renzo_piano
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+                concept_architect;
+                italy;;
+        *);;

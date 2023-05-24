@@ -1,0 +1,78 @@
+concept_building -> centre_pompidu;;
+centre_pompidu
+    => nrel_architector:
+        renzo_piano;
+        richard_rodjers;;
+
+centre_pompidu
+    => nrel_style:
+        high_tech_architecture;;
+
+centre_pompidu
+    => nrel_location:
+        paris;;
+
+paris
+    => nrel_location:
+        france;;
+
+centre_pompidu
+    => nrel_invention_year:
+        [1977 год];;
+
+
+centre_pompidu
+  => nrel_main_idtf:
+    [Pompidu Centre] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Центр Помпиду]
+    (* <- lang_ru;; *);;
+
+centre_pompidu
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Центр Помпиду] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Centre Pompidu] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Национальный центр искусства и культуры Жоржа Помпиду, в просторечии Центр Жоржа Помпиду
+                         Центр Помпиду или Бобур — культурный центр в квартале Бобур 4-го округа Парижа между кварталами
+                          Ле-Аль и Маре. Деятельность центра посвящена изучению и поддержке современного искусства и искусства
+                           XX века в различных его проявлениях (изобразительныe искусства, танец, музыка и пр.). ];;
+                    -> rrel_example:
+                        [Georges Pompidou National Center for Arts and Culture, colloquially Georges Pompidou Center
+                         Center Pompidou or Beaubourg is a cultural center in the Beaubourg quarter of the 4th arrondissement of Paris between quarters
+                          Les Halles and Marais. The activity of the center is dedicated to the study and support of contemporary art and art
+                           XX century in its various manifestations (fine arts, dance, music, etc.).];;      
+                *);;
+        *);;
+
+centre_pompidu 
+    <-rrel_key_sc_element:
+        ...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Центр Помпиду)](*<-lang_ru;;*);
+		        [Pic. (Centre Pompidu)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://centre_pompidu.jpg"(* => nrel_format:format_jpeg;; *);;
+	        *);;
+        *);;
+
+centre_pompidu
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              concept_art;
+              paris;;
+        *);;

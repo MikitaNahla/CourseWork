@@ -1,0 +1,9 @@
+chicago <- concept_city;;
+
+chicago 
+  => nrel_main_idtf: 
+    [Chicago] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Чикаго]
+    (* <- lang_ru;; *);;

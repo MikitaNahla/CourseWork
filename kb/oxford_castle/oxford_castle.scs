@@ -1,0 +1,74 @@
+concept_building -> oxford_castle;;
+
+oxford_castle
+    => nrel_style:
+        norman_architecture;;
+
+oxford_castle
+    => nrel_architector:
+        osney;;
+
+oxford_castle
+    => nrel_location:
+        oxford;;
+
+oxford
+    => nrel_location:
+        uk;;
+
+oxford_castle
+    => nrel_invention_year:
+        [12-13 вв.];;
+
+
+oxford_castle
+  => nrel_main_idtf: 
+    [Oxford Castle] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Оксфордский замок]
+    (* <- lang_ru;; *);;
+
+oxford_castle
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Оксфордский замок] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Oxford Castle] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Оксфордский замок — большой частично разрушенный средневековый замок в западной части центрального Оксфорда.
+                         в Оксфордшире, Англия.];;
+                    -> rrel_example:
+                        [Oxford Castle is a large, partly ruined medieval castle on the western side of central Oxford
+                         in Oxfordshire, England. ];;      
+                *);;
+        *);;
+
+oxford_castle 
+    <-rrel_key_sc_element:
+        ...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Оксфордский Замок)](*<-lang_ru;;*);
+		        [Pic. (Oxford Castle)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://oxford_castle.jpeg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+oxford_castle
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+                uk;
+                oxford;;
+        *);;

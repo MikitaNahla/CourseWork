@@ -1,0 +1,73 @@
+concept_building -> hasht_bihisht;;
+hasht_bihisht
+    => nrel_architector:
+        paskal_koste;;
+
+hasht_bihisht
+    => nrel_style:
+        indo_islamic_architecture;;
+
+hasht_bihisht
+    => nrel_location:
+        ishafan;;
+
+ishafan
+    => nrel_location:
+        iran;;
+
+hasht_bihisht
+    => nrel_invention_year:
+        [XVII в.];;
+
+
+hasht_bihisht
+  => nrel_main_idtf: 
+    [Hasht-Bihisht] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Хашт-Бехешт]
+    (* <- lang_ru;; *);;
+
+hasht_bihisht
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Хашт-Бехешт] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Hasht-Bihisht] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Хашт-Бехешт — персидский дворец в Исфахане. Дворец, а также относящиеся к комплексу библиотека, мечеть,
+                         очаг здоровья, ипподром и аллея были построены в XVII веке в эпоху Сефевидов. Центральный холл окружён
+                          восемью комнатами; здание и комнаты имеют в плане восьмигранную форму. ];;
+                    -> rrel_example:
+                        [Hasht Behesht is a Persian palace in Isfahan. The palace, as well as the library, mosque,
+                         the health center, the hippodrome and the alley were built in the 17th century during the Safavid era. The central hall is surrounded
+                          eight rooms; the building and rooms are octagonal in plan.];;      
+                *);;
+        *);;
+
+hasht_bihisht 
+    <-rrel_key_sc_element:
+        ...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Хашт-Бехешт)](*<-lang_ru;;*);
+		        [Pic. (Hasht-Bihisht)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://hasht_bihisht.jpeg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+hasht_bihisht
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              concept_building;; 
+        *);;

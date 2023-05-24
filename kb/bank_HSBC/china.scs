@@ -1,0 +1,9 @@
+china <- concept_country;;
+
+china 
+  => nrel_main_idtf: 
+    [China] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Китай]
+    (* <- lang_ru;; *);;

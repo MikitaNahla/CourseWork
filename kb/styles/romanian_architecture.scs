@@ -1,0 +1,38 @@
+romanian_architecture <- concept_style;;
+
+romanian_architecture 
+  => nrel_main_idtf: 
+    [romanian_architecture] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Романская архитектура]
+    (* <- lang_ru;; *);;
+
+romanian_architecture
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Романская архитектура] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: romanian architecture] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Романская архитектура - архитектурный стиль средневековой Европы, характеризующийся полукруглыми арками.
+                         ];;
+                        
+                    -> rrel_example:
+                        [Romanian architecture is an architectural style of medieval Europe characterized by semi-circular
+                         arches.];;         
+                *);;
+        *);;
+
+romanian_architecture
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              concept_architecture;
+              concept_style;;  
+        *);;        

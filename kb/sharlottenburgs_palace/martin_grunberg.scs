@@ -1,0 +1,35 @@
+martin_grunberg <- concept_architect;;
+
+martin_grunberg 
+  => nrel_main_idtf: 
+    [Martin Grunberg] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Мартин Грюнберг]
+    (* <- lang_ru;; *);;
+
+martin_grunberg
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Мартин Грюнберг] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Martin Grunberg] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Мартин Грюнберг — немецкий мастер-строитель и архитектор эпохи позднего барокко.];; 
+                    -> rrel_example:
+                        [Martin Grunberg was a German master builder and architect of the late Baroque period.];;
+                *);;
+        *);;
+
+martin_grunberg
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+                concept_architect;;
+        *);;

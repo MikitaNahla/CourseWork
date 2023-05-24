@@ -1,0 +1,39 @@
+//Описание класса скульптура
+concept_sculpture <- sc_node_class;;
+
+concept_sculpture
+  => nrel_main_idtf: 
+    [Sculpture] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Скульптура]
+    (* <- lang_ru;; *);;
+
+concept_sculpture
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- sc_definition;;
+                => nrel_main_idtf: [Определение: Скульптура] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Definiton: Sculpture] (* <- lang_en;; *);;
+            <- definiton;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Скульптура - искусство создания объёмных художественных произведений путём резьбы, лепки или отливки.];;
+                    -> rrel_example:
+                        [Sculpture is the art of creating three-dimensional works of art by carving, modeling or casting.];;  
+                    -> rrel_example:
+                        [Скульптура - произведение такого искусства, а также совокупность таких произведений.];;   
+                    -> rrel_example:
+                        [Sculpture is a work of such art, as well as a collection of such works.];;      
+                *);;
+        *);;
+
+concept_sculpture
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+                concept_art;;
+        *);;

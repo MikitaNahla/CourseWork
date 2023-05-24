@@ -1,0 +1,43 @@
+high_tech_architecture <- concept_style;;
+
+high_tech_architecture 
+  => nrel_main_idtf: 
+    [high_tech_architecture] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [архитектура Хай-Тек]
+    (* <- lang_ru;; *);;
+
+high_tech_architecture
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: архитектура Хай-Тек] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: high tech architecture] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Архитектура высоких технологий, также известная как структурный экспрессионизм,
+                         представляет собой тип поздней модернистской архитектуры, возникший в 1970-х годах
+                          и включающий в себя элементы высокотехнологичной промышленности и технологий в дизайне зданий.
+                         ];;
+                        
+                    -> rrel_example:
+                        [High-tech architecture, also known as structural expressionism, is a type of late modernist
+                         architecture that emerged in the 1970s, incorporating elements of high tech industry and 
+                         technology into building design.];;         
+                *);;
+        *);;
+
+
+high_tech_architecture
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+                concept_architecture;
+                concept_technology;
+                concept_design;;
+        *);;

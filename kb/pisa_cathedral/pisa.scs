@@ -1,0 +1,9 @@
+pisa <- concept_city;;
+
+pisa 
+  => nrel_main_idtf: 
+    [Pisa] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Пиза]
+    (* <- lang_ru;; *);;

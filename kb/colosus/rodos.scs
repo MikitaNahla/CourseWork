@@ -1,0 +1,9 @@
+rodos <- concept_city;;
+
+rodos 
+  => nrel_main_idtf: 
+    [Rodos] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Родос]
+    (* <- lang_ru;; *);;

@@ -1,0 +1,39 @@
+james_wyatt <- concept_architect;;
+
+james_wyatt 
+  => nrel_main_idtf: 
+    [James Wyatt] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Джеймс Уайетт]
+    (* <- lang_ru;; *);;
+
+james_wyatt
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Джеймс Уайетт] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: James Wyatt] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Джеймс Уайетт был английским архитектором, соперником Роберта Адама в неоклассическом и неоготическом
+                         стилях. Он был избран в Королевскую академию в 1785 году и был ее президентом с 1805 по 1806 год.];; 
+                    -> rrel_example:
+                        [James Wyatt was an English architect, a rival of Robert Adam in
+                         the neoclassical and neo-Gothic styles. He was elected to the Royal Academy in 1785 and was its president
+                          from 1805 to 1806. ];;
+                *);;
+        *);;
+
+james_wyatt
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              concept_architect;
+              concept_style;;
+        *);;

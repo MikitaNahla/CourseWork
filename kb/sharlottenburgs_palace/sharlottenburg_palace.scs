@@ -1,0 +1,81 @@
+concept_building -> sharlottenburg_palace;;
+sharlottenburg_palace
+    => nrel_architector:
+        martin_grunberg;;
+
+sharlottenburg_palace
+    => nrel_style:
+        rococo_architecture;;
+
+sharlottenburg_palace
+    => nrel_location:
+        berlin;;
+
+berlin
+    => nrel_location:
+        germany;;
+
+sharlottenburg_palace
+    => nrel_invention_year:
+        [1695—1788 гг.];;
+
+
+sharlottenburg_palace
+  => nrel_main_idtf:
+    [Sharlottenburg Palace] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Шарлоттенбургский дворец]
+    (* <- lang_ru;; *);;
+
+sharlottenburg_palace
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Шарлоттенбургский дворец] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Sharlottenburg Palace] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Дворец Шарлоттенбург — дворец-музей, крупнейший
+                         и самый значительный дворцовый комплекс бранденбургских курфюрстов, прусских королей и германских
+                          императоров в Берлине. Один из наиболее изысканных примеров архитектуры барокко в Германии.
+                           Его купол считается одним из символов немецкой столицы. Весь дворцово-парковый ансамбль является
+                            историко-культурным памятником, находящимся под защитой государства. ];;
+                    -> rrel_example:
+                        [Charlottenburg Palace is a palace-museum, the largest
+                         and the most significant palace complex of the Brandenburg electors, Prussian kings and German
+                          emperors in Berlin. One of the most exquisite examples of baroque architecture in Germany.
+                           Its dome is considered one of the symbols of the German capital. The entire palace and park ensemble is
+                            historical and cultural monument under the protection of the state.];;      
+                *);;
+        *);;
+
+sharlottenburg_palace 
+    <-rrel_key_sc_element:
+        ...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Шарлоттенбургский дворец)](*<-lang_ru;;*);
+		        [Pic. (Sharlottenburg Palace)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://charlottenburg_palace.jpg"(* => nrel_format:format_jpeg;; *);;
+	        *);;
+        *);;
+
+sharlottenburg_palace
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              berlin;
+              concept_architecture;
+              germany;
+              concept_country;;
+        *);;

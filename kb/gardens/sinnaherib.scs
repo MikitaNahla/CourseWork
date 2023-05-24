@@ -1,0 +1,44 @@
+sinnaherib <- concept_architect;;
+
+sinnaherib 
+  => nrel_main_idtf: 
+    [Sinnaherib] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Синнахериб]
+    (* <- lang_ru;; *);;
+
+sinnaherib
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: о Синнахерибе] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: about Sinnaheribus] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [После гибели отца отказался взойти на трон в Вавилоне. Для восстановления власти, подавления
+                         восстаний в разных частях своей империи, и возвращения к покорности зависимых государств, он
+                          предпринял восемь крупных военных походов. Полностью разрушил Вавилон, после этого жил в своей
+                           столице Ниневии и много занимался дворцовым и храмовым строительством. Синаххериб описал своё
+                            царствование на шестигранных глиняных призмах с клинописными надписями — т. н. «анналы Синаххериба». ];; 
+                    -> rrel_example:
+                        [After the death of his father, he refused to ascend the throne in Babylon. To restore power, suppression
+                         uprisings in different parts of his empire, and returning to the obedience of dependent states, he
+                          undertook eight major military campaigns. Completely destroyed Babylon, after that he lived in his
+                           the capital of Nineveh and did a lot of palace and temple construction. Sennacherib described his
+                            reign on hexagonal clay prisms with cuneiform inscriptions - the so-called. Annals of Sennacherib.];;
+                *);;
+        *);;
+
+sinnaherib
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              babylon;
+              concept_country;; 
+        *);;

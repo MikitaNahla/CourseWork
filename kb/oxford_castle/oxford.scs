@@ -1,0 +1,9 @@
+oxford <- concept_city;;
+
+oxford 
+  => nrel_main_idtf: 
+    [Oxford] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Окcфорд]
+    (* <- lang_ru;; *);;

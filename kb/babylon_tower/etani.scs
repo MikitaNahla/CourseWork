@@ -1,0 +1,31 @@
+etani <- concept_architect;;
+
+etani 
+  => nrel_main_idtf: 
+    [Etana] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Этана]
+    (* <- lang_ru;; *);;
+
+etani
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: об Этана] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: about Etani] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Согласно «Царскому списку» Этана — тринадцатый правитель I династии Киша, по более древней традиции
+                         — первый царь этой династии.];; 
+                    -> rrel_example:
+                        [According to the "Royal List" Etana - the thirteenth ruler of the I dynasty of Kish, according to
+                         an older tradition the first king of this dynasty.
+
+                        ];;
+                *);;
+        *);;

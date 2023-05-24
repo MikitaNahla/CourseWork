@@ -1,0 +1,9 @@
+greece <- concept_country;;
+
+greece 
+  => nrel_main_idtf: 
+    [Greece] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Греция]
+    (* <- lang_ru;; *);;

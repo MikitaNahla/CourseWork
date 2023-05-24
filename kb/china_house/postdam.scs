@@ -1,0 +1,9 @@
+postdam <- concept_city;;
+
+postdam 
+  => nrel_main_idtf: 
+    [Postdam] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Постдам]
+    (* <- lang_ru;; *);;

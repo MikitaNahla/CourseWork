@@ -1,0 +1,9 @@
+honkong <- concept_city;;
+
+honkong 
+  => nrel_main_idtf: 
+    [Honkong] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Гонконг]
+    (* <- lang_ru;; *);;

@@ -1,0 +1,40 @@
+renaissance_architecture <- concept_style;;
+
+renaissance_architecture 
+  => nrel_main_idtf: 
+    [renaissance_architecture] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [архитектура Возрождения]
+    (* <- lang_ru;; *);;
+
+renaissance_architecture
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: архитектура Возрождения] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: renaissance architecture] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Архитектура Возрождения — это европейская архитектура периода между началом 15 в.
+                         и начала 16 веков в разных регионах, демонстрируя сознательное возрождение и развитие
+                          некоторые элементы древнегреческой и римской мысли и материальной культуры.
+                         ];;
+                        
+                    -> rrel_example:
+                        [Architecture of renaissance - is the European architecture of the period between the early 15th
+                         and early 16th centuries in different regions, demonstrating a conscious revival and development of
+                          certain elements of ancient Greek and Roman thought and material culture.];;         
+                *);;
+        *);;
+
+renaissance_architecture
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+                concept_architecture;;
+        *);;

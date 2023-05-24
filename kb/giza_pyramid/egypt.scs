@@ -1,0 +1,9 @@
+egypt <- concept_country;;
+
+egypt 
+  => nrel_main_idtf: 
+    [Egypt] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Египет]
+    (* <- lang_ru;; *);;

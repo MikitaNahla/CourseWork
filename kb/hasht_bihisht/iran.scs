@@ -1,0 +1,9 @@
+iran <- concept_country;;
+
+iran 
+  => nrel_main_idtf: 
+    [Iran] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Иран]
+    (* <- lang_ru;; *);;

@@ -1,0 +1,84 @@
+concept_building -> colosus;;
+colosus
+    => nrel_architector:
+        hares;;
+
+colosus
+    => nrel_style:
+        ancient_architecture;;
+
+colosus
+    => nrel_location:
+        rodos;;
+
+rodos
+    => nrel_location:
+        greece;;
+
+colosus
+    => nrel_invention_year:
+        [294–282 гг. до н. э.];;
+
+
+colosus
+  => nrel_main_idtf: 
+    [The Colossus of Rhodes] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Колосс Родосский]
+    (* <- lang_ru;; *);;
+
+colosus
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Колосс Родосский] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: The Colossus of Rhodes] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Колоосс Родоосский — гигантская статуя
+                         древнегреческого бога Солнца — Гелиоса, которая стояла в портовом городе Родосе, расположенном
+                          на одноимённом острове в Эгейском море, в Греции. Одно из «Семи чудес света». Произведение знаменитой
+                           родосской школы скульптуры. Простоял чуть более полувека, пока не был разрушен землетрясением.];;
+                    -> rrel_example:
+                        [Hanging Gardens of Babylon - one of the Seven Wonders of the Ancient World, which was an engineering
+                         structure in Babylon with a cascade of multi-level gardens, where numerous species of trees, shrubs
+                          and vines grew, giving the impression of a large green mountain. The only one of the Seven Wonders,
+                           the location of which has not been finally established and, moreover, the very fact of its
+                            existence is questioned, since no Babylonian texts that mention these gardens have been preserved,
+                             descriptions of the gardens are only found in late ancient Greek and Roman authors, and
+                              archaeological excavations in the area of the alleged location of the gardens also did not
+                               yield results.];;      
+                *);;
+        *);;
+
+colosus 
+    <-rrel_key_sc_element:
+        ...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Колосс Родосский)](*<-lang_ru;;*);
+		        [Pic. (The Colossus of Rhodes)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://colosus.jpg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+colosus
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              rodos;
+              concept_city;
+              greece;
+              concept_sculpture;
+              concept_statue;; 
+        *);;

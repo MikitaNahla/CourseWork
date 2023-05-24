@@ -1,0 +1,82 @@
+concept_building -> tower_of_babel;;
+tower_of_babel
+    => nrel_architector:
+        etani;;
+
+tower_of_babel
+    => nrel_style:
+        ancient_architecture;;
+
+tower_of_babel
+    => nrel_location:
+        babylon;;
+
+babylon
+    => nrel_location:
+        babylonia;;
+
+tower_of_babel
+    => nrel_invention_year:
+        [XXVIII век до н. э.];;
+
+
+tower_of_babel
+  => nrel_main_idtf: 
+    [Tower Of Babel] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Вавилонская башня]
+    (* <- lang_ru;; *);;
+
+tower_of_babel
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Вавилонская башня] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Tower Of Babel] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Согласно Списку царей Шумера и Аккада на это время приходится время правления царя Этани, по более
+                         древней традиции, первый царь I династии Киша, о нём говорится: <Этана, пастух, тот, кто вознёсся 
+                         на небеса, тот, кто объединил все страны, и стал царём>. Иногда проводятся аналогии между Этаной
+                          и библейским Нимроодом, названным царем городов «Вавилон, Эрех, Аккад
+                           и Халне в земле Сеннаар» (Быт. 10:10). В агадических преданиях именно ему приписывается
+                            строительство Вавилонской башни.];;
+                    -> rrel_example:
+                        [According to the List of Kings of Sumer and Akkad, this time falls on the reign of King Etani, according to more
+                         ancient tradition, the first king of the I dynasty of Kish, it is said about him: Etana, the shepherd, the one who ascended
+                         to heaven, the one who united all countries and became king>. Sometimes analogies are drawn between Etana
+                          and the biblical Nimrood, called the king of the cities Babylon, Erech, Akkad
+                           and Halneh in the land of Shinar” (Genesis 10:10). In Aggadic traditions, it is attributed to him
+                            construction of the Tower of Babel.];;      
+                *);;
+        *);;
+
+tower_of_babel 
+    <-rrel_key_sc_element:
+        ...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Вавилонская башня)](*<-lang_ru;;*);
+		        [Pic. (Tower Of Babel)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://babylon_tower.jpg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+tower_of_babel
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              etani;
+              concept_country;
+              concept_city;; 
+        *);;

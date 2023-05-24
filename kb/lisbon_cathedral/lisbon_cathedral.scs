@@ -1,0 +1,72 @@
+concept_building -> lisbon_cathedral;;
+
+lisbon_cathedral
+    => nrel_style:
+        romanian_architecture;;
+
+lisbon_cathedral
+    => nrel_location:
+        lisbon;;
+
+lisbon
+    => nrel_location:
+        portugal;;
+
+1150 <- number;;
+lisbon_cathedral
+    => nrel_invention_year:
+        1150;;
+
+lisbon_cathedral
+  => nrel_main_idtf: 
+    [Lisbon Cathedral] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Лиссабонский собор]
+    (* <- lang_ru;; *);;
+
+lisbon_cathedral
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Лиссабонский собор] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Lisbon Cathedral] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Собор Святой Марии Маджоре, часто называемый Лиссабонским собором или просто Се, является
+                         римско-католическим собором, расположенным в Лиссабоне, Португалия. Старейшая церковь города,
+                          резиденция Патриархата Лиссабона.];;
+                    -> rrel_example:
+                        [The Cathedral of Saint Mary Major, often called Lisbon Cathedral or simply the Se, is a Roman Catholic
+                         cathedral located in Lisbon, Portugal. The oldest church in the city, it is the seat of the Patriarchate
+                          of Lisbon.];;      
+                *);;
+        *);;
+
+lisbon_cathedral 
+    <-rrel_key_sc_element:
+        ...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Лиссабонский собор)](*<-lang_ru;;*);
+		        [Pic. (Lisbon Cathedral)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://lisbon_cathedral.jpeg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+lisbon_cathedral
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              lisbon;
+              portugal;
+              nrel_location;; 
+        *);;

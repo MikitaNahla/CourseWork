@@ -1,0 +1,45 @@
+victor_vesnin <- concept_architect;;
+
+victor_vesnin 
+  => nrel_main_idtf: 
+    [Victor Vesnin] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Виктор Веснин]
+    (* <- lang_ru;; *);;
+
+victor_vesnin
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Виктор Веснин] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Victor Vesnin] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Виктор Александрович Веснин — русский и советский архитектор, преподаватель и общественный деятель,
+                         один из братьев Весниных, представитель авангардного и неоклассического направлений в архитектуре.
+                          Главный архитектор Наркомтяжпрома (1934), председатель Союза архитекторов СССР (1937—1949),
+                           первый президент Академии архитектуры СССР (1936—1949), действительный член АН СССР (с 1943),
+                            депутат Верховного Совета СССР 1-го и 2-го созывов. ];; 
+                    -> rrel_example:
+                        [Viktor Alexandrovich Vesnin - Russian and Soviet architect, teacher and public figure,
+                         one of the Vesnin brothers, a representative of the avant-garde and neoclassical trends in architecture.
+                          Chief architect of the Narkomtyazhprom (1934), chairman of the Union of Architects of the USSR (1937-1949),
+                           first president of the USSR Academy of Architecture (1936-1949), full member of the USSR Academy of Sciences (since 1943),
+                            Deputy of the Supreme Soviet of the USSR of the 1st and 2nd convocations.];;
+                *);;
+        *);;
+
+victor_vesnin
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              russia;
+              concept_architect;
+              concept_style;;
+        *);;

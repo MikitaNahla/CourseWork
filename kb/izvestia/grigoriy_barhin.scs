@@ -1,0 +1,41 @@
+grigoriy_barhin <- concept_architect;;
+
+grigoriy_barhin 
+  => nrel_main_idtf: 
+    [Grigoriy Barhin] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Григорий Бархин]
+    (* <- lang_ru;; *);;
+
+grigoriy_barhin
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Григорий Бархин] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Grigoriy Barhin] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Григорий Борисович (Герш Беркович) Бархин (1880, Пермь — 1969, Москва) — советский архитектор,
+                         градостроитель, теоретик архитектуры, педагог, член-корреспондент Академии Строительства
+                          и Архитектуры (1956), Заслуженный деятель науки и техники РСФСР. Отец архитекторов Бориса,
+                           Анны и Михаила Бархиных. ];; 
+                    -> rrel_example:
+                        [Grigory Borisovich (Gersh Berkovich) Barkhin (1880, Perm - 1969, Moscow) - Soviet architect,
+                         urban planner, architecture theorist, teacher, corresponding member of the Academy of Civil Engineering
+                          and Architecture (1956), Honored Worker of Science and Technology of the RSFSR. Father of architects Boris,
+                           Anna and Mikhail Barkhin.];;
+                *);;
+        *);;
+
+grigoriy_barhin
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              concept_architect;;
+        *);;

@@ -1,0 +1,36 @@
+norman_foster <- concept_architect;;
+
+norman_foster 
+  => nrel_main_idtf: 
+    [Norman Foster] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Норман Фостер]
+    (* <- lang_ru;; *);;
+
+norman_foster
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Норман Фостер] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Norman Foster] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Норман Роберт Фостер, барон Фостер Темз-Банкский, — британский архитектор и дизайнер,
+                         лауреат Императорской и Притцкеровской премий.  ];; 
+                    -> rrel_example:
+                        [Norman Robert Foster, Baron Foster of Thames Bank, British architect and designer,
+                         laureate of the Imperial and Pritzker Prizes.];;
+                *);;
+        *);;
+
+norman_foster
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+                concept_architect;;
+        *);;

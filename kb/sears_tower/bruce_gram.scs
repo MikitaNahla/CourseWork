@@ -1,0 +1,36 @@
+bruce_gram <- concept_architect;;
+
+bruce_gram 
+  => nrel_main_idtf: 
+    [Bruce Gram] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Брюс Грэм]
+    (* <- lang_ru;; *);;
+
+bruce_gram
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Брюс Грэм] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Bruce Gram] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Брюс Джон Грэм был перуанско-американским архитектором.];; 
+                    -> rrel_example:
+                        [Bruce John Graham was a Peruvian-American architect.];;
+                *);;
+        *);;
+
+bruce_gram
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              concept_architect;
+              usa;;
+        *);;

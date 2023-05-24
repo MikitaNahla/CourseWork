@@ -1,0 +1,50 @@
+//Описание класса архитектор
+concept_architect <- sc_node_class;;
+
+concept_architect 
+  => nrel_main_idtf: 
+    [architect] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [архитектор]
+    (* <- lang_ru;; *);;
+
+concept_architect
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- sc_definition;;
+                => nrel_main_idtf: [Определение: Архитектор] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Definiton: Architect] (* <- lang_en;; *);;
+            <- definiton;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Архитектор - квалифицированный специалист, который на профессиональной основе осуществляет архитектурное проектирование (
+                            организацию архитектурной среды), включая проектирование зданий, в том числе разработку объёмно-планировочных и 
+                            интерьерных решений, а также «авторский надзор за строительством архитектурного объекта».];;
+                    -> rrel_example:
+                        [An architect is a qualified specialist who, on a professional basis, carries out architectural design (
+                            organization of the architectural environment), including the design of buildings, including the development of space-planning and
+                            interior solutions, as well as "author's supervision of the construction of an architectural object."];;      
+                *);;
+        *);;
+
+nrel_architector <- sc_node_norole_relation;;
+
+nrel_architector 
+  => nrel_main_idtf: 
+    [nrel_architector] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [архитектор* ]
+    (* <- lang_ru;; *);;
+
+concept_architect
+  => nrel_using_constansts:
+    ...
+    (*
+      <-
+        concept_architecture;
+        concept_building;;
+    *);;

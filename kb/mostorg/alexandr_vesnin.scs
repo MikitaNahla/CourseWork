@@ -1,0 +1,42 @@
+alexandr_vesnin <- concept_architect;;
+
+alexandr_vesnin 
+  => nrel_main_idtf: 
+    [Alexandr Vesnin] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Александр Веснин]
+    (* <- lang_ru;; *);;
+
+alexandr_vesnin
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Александр Веснин] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Alexandr Vesnin] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Александр Александрович Веснин — русский и советский архитектор, театральный художник и преподаватель.
+                         Почётный член Академии строительства и архитектуры СССР (1956), профессор. Один из братьев Весниных. ];; 
+                    -> rrel_example:
+                        [Alexander Alexandrovich Vesnin is a Russian and Soviet architect, theater artist and teacher.
+                         Honorary member of the Academy of Construction and Architecture of the USSR (1956), professor. One of
+                          the Vesnin brothers.];;
+                *);;
+        *);;
+
+alexandr_vesnin
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              russia;
+              concept_theatre;
+              concept_art;
+              concept_architecture;
+              concept_building;;
+        *);;

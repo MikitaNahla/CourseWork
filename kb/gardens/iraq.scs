@@ -1,0 +1,9 @@
+iraq <- concept_country;;
+
+iraq 
+  => nrel_main_idtf: 
+    [Iraq] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Ирак]
+    (* <- lang_ru;; *);;

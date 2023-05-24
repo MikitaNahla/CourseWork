@@ -1,0 +1,45 @@
+richard_rodjers <- concept_architect;;
+
+richard_rodjers 
+  => nrel_main_idtf: 
+    [Richard Rodjers] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Ричард Роджерс]
+    (* <- lang_ru;; *);;
+
+richard_rodjers
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Ричард Роджерс] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Richard Rodjers] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Ричард Роджерс, Барон Роджерс Риверсайдский — британский архитектор, важнейший представитель 
+                        архитектуры XX века. Вместе с Ренцо Пиано и Норманом Фостером считается одним из инициаторов «хай-тека»
+                         в архитектуре. Лауреат Императорской и Притцкеровской премий. Королева Великобритании
+                          произвела его в бароны. Ричард Роджерс был удостоен ордена Почётного легиона в 1986 году,
+                           посвящён в рыцари в 1991 году и сделан пожизненным пэром в 1996 году. ];; 
+                    -> rrel_example:
+                        [Richard Rogers, Baron Rogers of Riverside - British architect, the most important representative
+                        architecture of the 20th century. Together with Renzo Piano and Norman Foster, he is considered one of the initiators of "hi-tech"
+                         in architecture. Laureate of the Imperial and Pritzker Prizes. Queen of Great Britain
+                          made him a baron. Richard Rogers was awarded the Légion d'honneur in 1986,
+                           knighted in 1991 and made a life peer in 1996.];;
+                *);;
+        *);;
+
+richard_rodjers
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+                concept_architect;
+                high_tech_architecture;
+                concept_architecture;;
+        *);;

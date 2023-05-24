@@ -1,0 +1,77 @@
+concept_building -> pisa_cathedral;;
+pisa_cathedral
+    => nrel_architector:
+        busketo;;
+
+pisa_cathedral
+    => nrel_style:
+        romanian_architecture;;
+
+pisa_cathedral
+    => nrel_location:
+        pisa;;
+
+pisa
+    => nrel_location:
+        italy;;
+
+1063 <- number;;
+pisa_cathedral
+    => nrel_invention_year:
+        1063;;
+
+
+pisa_cathedral
+  => nrel_main_idtf: 
+    [Pisa Cathedral] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Пизанский собор]
+    (* <- lang_ru;; *);;
+
+pisa_cathedral
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Пизанский собор] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Pisa Cathedral] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Пизанский собор в честь Вознесения Пресвятой Девы Марии: «Санта-Мария-Ассунта» (итал. Duomo di Santa
+                         Maria Assunta) — кафедральный собор Пизы, часть ансамбля площади Пьяцца деи Мираколи. Представляет
+                          собой один из наиболее значительных памятников романской архитектуры Италии. ];;
+                    -> rrel_example:
+                        [Pisa Cathedral in honor of the Assumption of the Blessed Virgin Mary: "Santa Maria Assunta" (Italian Duomo di Santa
+                         Maria Assunta) is the Cathedral of Pisa, part of the ensemble of Piazza dei Miracoli. Is
+                          one of the most significant monuments of Romanesque architecture in Italy.];;      
+                *);;
+        *);;
+
+pisa_cathedral 
+    <-rrel_key_sc_element:
+        ...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Пизанский собор)](*<-lang_ru;;*);
+		        [Pic. (Pisa Cathedral)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://pisa_cathedral.jpeg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+pisa_cathedral
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+                concept_style;
+                romanian_architecture;
+                italy;;
+        *);;

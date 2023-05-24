@@ -1,0 +1,76 @@
+concept_building -> giza_pyramid;;
+giza_pyramid
+    => nrel_architector:
+        hemiun;;
+
+giza_pyramid
+    => nrel_style:
+        ancient_architecture;;
+
+giza_pyramid
+    => nrel_location:
+        al_haram;;
+
+al_haram
+    => nrel_location:
+        egypt;;
+
+giza_pyramid
+    => nrel_invention_year:
+        [2540 лет до н. э.];;
+
+
+giza_pyramid
+  => nrel_main_idtf: 
+    [Giza Pyramid] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Пирамида Хеопса]
+    (* <- lang_ru;; *);;
+
+giza_pyramid
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Пирамида Хеопса] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Giza Pyramid] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Великая пирамида Гизы — крупнейшая из египетских пирамид, памятник архитектурного искусства Древнего
+                         Египта; единственное из «Семи чудес света», сохранившееся до наших дней, и самое древнее из них: её
+                          возраст оценивается примерно в 4500 лет. ];;
+                    -> rrel_example:
+                        [The Great Pyramid of Giza is the largest of the Egyptian pyramids, a monument of the architectural
+                         art of Ancient Egypt; the only one of the "Seven Wonders of the World" that has survived to this day,
+                          and the oldest of them: its age is estimated at about 4500 years.];;      
+                *);;
+        *);;
+
+giza_pyramid 
+    <-rrel_key_sc_element:
+        ...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Пирамида Хеопса)](*<-lang_ru;;*);
+		        [Pic. (Giza Pyramid)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://giza_pyramid.jpg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+giza_pyramid
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              concept_architecture;
+              concept_art;
+              egypt;; 
+        *);;

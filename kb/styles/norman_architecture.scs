@@ -1,0 +1,44 @@
+norman_architecture <- concept_style;;
+
+norman_architecture 
+  => nrel_main_idtf: 
+    [norman_architecture] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Нормандская архитектура]
+    (* <- lang_ru;; *);;
+
+norman_architecture
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Нормандская архитектура] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: norman architecture] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Термин нормандская архитектура используется для классификации стилей романской архитектуры,
+                         разработанных норманнами на различных землях, находящихся под их властью или влиянием в 11 
+                         и 12 веках. В частности, этот термин традиционно используется для обозначения английской романской 
+                         архитектуры.
+                         ];;
+                        
+                    -> rrel_example:
+                        [The term Norman architecture is used to categorise styles of Romanesque architecture 
+                        developed by the Normans in the various lands under their dominion or influence in the 
+                        11th and 12th centuries. In particular the term is traditionally used for English Romanesque 
+                        architecture.];;         
+                *);;
+        *);;
+
+ancient_architecture
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+                concept_architecture;
+                concept_style;
+                romanian_architecture;;
+        *);;

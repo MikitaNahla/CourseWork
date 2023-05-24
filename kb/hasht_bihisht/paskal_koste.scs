@@ -1,0 +1,34 @@
+paskal_koste <- concept_architect;;
+
+paskal_koste 
+  => nrel_main_idtf: 
+    [Paskal Koste] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Паскаль Косте]
+    (* <- lang_ru;; *);;
+
+paskal_koste
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Паскаль Косте] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Paskal Koste] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Паскаль Косте — французский архитектор и востоковед. ];; 
+                    -> rrel_example:
+                        [Pascal Coste is a French architect and orientalist.];;
+                *);;
+        *);;
+
+paskal_koste
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+                concept_architect;;
+        *);;

@@ -1,0 +1,9 @@
+russia <- concept_country;;
+
+russia 
+  => nrel_main_idtf: 
+    [Russia] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Россия]
+    (* <- lang_ru;; *);;

@@ -1,0 +1,77 @@
+concept_building -> izvestia;;
+izvestia
+    => nrel_architector:
+        grigoriy_barhin;;
+
+izvestia
+    => nrel_style:
+        constructivist_architecture;;
+
+izvestia
+    => nrel_location:
+        moscow;;
+
+moscow
+    => nrel_location:
+        russia;;
+
+izvestia
+    => nrel_invention_year:
+        [1925—1927 гг.];;
+
+
+izvestia
+  => nrel_main_idtf: 
+    [The building of the newspaper "Izvestia"] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Здание газеты «Известия»]
+    (* <- lang_ru;; *);;
+
+izvestia
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Здание газеты «Известия»] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: The building of the newspaper "Izvestia"] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Здание газеты «Известия» — здание в стиле конструктивизма, расположенное по адресу Пушкинская площадь,
+                         3 в Тверском районе Москвы. Объект культурного наследия регионального значения. С 1927 по 2011 год в 
+                         здании размещалась редакция газеты «Известия». ];;
+                    -> rrel_example:
+                        [The building of the Izvestia newspaper is a building in the style of constructivism, located at Pushkinskaya Square,
+                         3 in the Tverskoy district of Moscow. An object of cultural heritage of regional significance. From 1927 to 2011 in
+                         The building housed the editorial office of the Izvestia newspaper.];;      
+                *);;
+        *);;
+
+izvestia 
+    <-rrel_key_sc_element:
+        ...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Здание газеты «Известия»)](*<-lang_ru;;*);
+		        [Pic. (The building of the newspaper "Izvestia")](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://izvestia.jpg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+izvestia
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+                concept_style;
+                concept_building;
+                constructivist_architecture;
+                nrel_location;;
+        *);;

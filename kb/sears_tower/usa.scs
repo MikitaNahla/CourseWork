@@ -1,0 +1,9 @@
+usa <- concept_country;;
+
+usa 
+  => nrel_main_idtf: 
+    [U.S.A.] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Соединнённые Штаты Америки]
+    (* <- lang_ru;; *);;

@@ -1,0 +1,37 @@
+nicolo_baratteriero <- concept_architect;;
+
+nicolo_baratteriero 
+  => nrel_main_idtf: 
+    [Nicolo Barateriero] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Николо Бараттерьеро]
+    (* <- lang_ru;; *);;
+
+nicolo_baratteriero
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Николо Бараттерьеро] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Nicolo Barateriero] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Николо Бараттьеро — итальянский архитектор, работавший в Венеции. ];; 
+                    -> rrel_example:
+                        [Nicolo Barattiero is an Italian architect who worked in Venice.];;
+                *);;
+        *);;
+
+nicolo_baratteriero
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              concept_architect;
+              venice;
+              italy;;
+        *);;

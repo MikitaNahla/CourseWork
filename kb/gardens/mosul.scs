@@ -1,0 +1,9 @@
+mosul <- concept_city;;
+
+mosul 
+  => nrel_main_idtf: 
+    [Mosul] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Мосул]
+    (* <- lang_ru;; *);;

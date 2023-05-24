@@ -1,0 +1,35 @@
+iohannes <- concept_architect;;
+
+iohannes 
+  => nrel_main_idtf: 
+    [Iohannes Gotfrid] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Иоганн Готфрид]
+    (* <- lang_ru;; *);;
+
+iohannes
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: об Иоганне Готфриде] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: about Iohannes Gotfrid] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Иоганн Готфрид Бюринг — немецкий мастер-строитель и архитектор эпохи позднего барокко.];; 
+                    -> rrel_example:
+                        [Johann Gottfried Büring was a German master builder and architect of the late Baroque period.];;
+                *);;
+        *);;
+
+iohannes
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+                concept_architect;;
+        *);;

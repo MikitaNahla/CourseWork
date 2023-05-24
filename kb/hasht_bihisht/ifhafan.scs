@@ -1,0 +1,10 @@
+//Город Агра
+ishafan <- concept_city;;
+
+ishafan 
+  => nrel_main_idtf: 
+    [Ishafan] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Исхафан]
+    (* <- lang_ru;; *);;

@@ -1,0 +1,9 @@
+italy <- concept_country;;
+
+italy 
+  => nrel_main_idtf: 
+    [Italy] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Италия]
+    (* <- lang_ru;; *);;

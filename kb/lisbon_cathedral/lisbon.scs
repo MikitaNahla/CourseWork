@@ -1,0 +1,9 @@
+lisbon <- concept_city;;
+
+lisbon 
+  => nrel_main_idtf: 
+    [Lisbon] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Лиссабон]
+    (* <- lang_ru;; *);;

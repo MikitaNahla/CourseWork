@@ -1,0 +1,41 @@
+busketo <- concept_architect;;
+
+busketo 
+  => nrel_main_idtf: 
+    [Busketo] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Бускетто]
+    (* <- lang_ru;; *);;
+
+busketo
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Бускето] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Busketo] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Бускето (итал. Buscheto), также Бускеетус (лат. Busketus), Бускетто (итал. Buschetto), Боскетто
+                         (итал. Boschetto; первое упоминание 1063 — ок. 1110, Пиза) — итальянский архитектор, один из авторов
+                          Пизанского собора.];; 
+                    -> rrel_example:
+                        [Buscheto (Italian Buscheto), also Buskeetus (lat. Busketus), Buschetto (Italian Buschetto), Boschetto
+                         (Italian: Boschetto; first mentioned 1063 - c. 1110, Pisa) - Italian architect, one of the authors
+                          Pisa Cathedral.];;
+                *);;
+        *);;
+
+busketo
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              concept_architect;
+              pisa_cathedral;
+              italy;;
+        *);;

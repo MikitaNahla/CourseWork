@@ -1,0 +1,75 @@
+concept_building -> sears_tower;;
+sears_tower
+    => nrel_architector:
+        bruce_gram;;
+
+sears_tower
+    => nrel_style:
+        high_tech_architecture;;
+
+sears_tower
+    => nrel_location:
+        chicago;;
+
+chicago
+    => nrel_location:
+        usa;;
+
+sears_tower
+    => nrel_invention_year:
+        [1970—1973 гг.];;
+
+
+sears_tower
+  => nrel_main_idtf: 
+    [Sears Tower] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Уиллис-Тауэр]
+    (* <- lang_ru;; *);;
+
+sears_tower
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Уиллис-Тауэр] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Sears Tower] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Уиллис-тауэр (англ. Willis Tower), до 2009 года — Сирс-тауэр (Sears Tower) — небоскрёб в Чикаго,
+                         США, имеющий высоту 442,1 м и насчитывающий 108 этажей. Небоскрёб был построен в период с августа
+                          1970 года по 4 мая 1973 года.];;
+                    -> rrel_example:
+                        [Willis Tower (eng. Willis Tower), until 2009 - Sears Tower (Sears Tower) - a skyscraper in Chicago,
+                         USA, having a height of 442.1 m and numbering the 108th floor. The skyscraper was built between August
+                          1970 to May 4, 1973.];;      
+                *);;
+        *);;
+
+sears_tower 
+    <-rrel_key_sc_element:
+        ...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Уиллис-Тауэр)](*<-lang_ru;;*);
+		        [Pic. (Sears Tower)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://sears_tower.jpeg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+sears_tower
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+                chicago;
+                usa;;
+        *);;

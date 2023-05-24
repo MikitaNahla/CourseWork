@@ -1,0 +1,42 @@
+//Описание архтектуры Великих Моголов
+ancient_architecture <- concept_style;;
+
+ancient_architecture 
+  => nrel_main_idtf: 
+    [ancient_architecture] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [архитектура Древнего Мира]
+    (* <- lang_ru;; *);;
+
+ancient_architecture
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: архитектура Древнего Мира] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: ancient architecture] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Архитектура Древнего Мира - разнообразие архитектурных стилей, существовавших в древнее время.
+                        Стиль характерзиуется практичностью, строгостью, религиозностью и использованием натуральных материалов
+                        для создания.
+                         ];;
+                        
+                    -> rrel_example:
+                        [Architecture of the Ancient World - a variety of architectural styles that existed in ancient times.
+                        The style is characterized by practicality, rigor, religiosity and the use of natural materials.
+                        for creating.];;         
+                *);;
+        *);;
+
+ancient_architecture
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+                concept_style;
+                concept_architecture;;
+        *);;

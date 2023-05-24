@@ -1,0 +1,9 @@
+berlin <- concept_city;;
+
+berlin 
+  => nrel_main_idtf: 
+    [Berlin] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Берлин]
+    (* <- lang_ru;; *);;

@@ -1,0 +1,39 @@
+//Описание класса живописи
+concept_painting <- sc_node_class;;
+
+concept_painting
+  => nrel_main_idtf: 
+    [Painting] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Живопись]
+    (* <- lang_ru;; *);;
+
+concept_painting
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- sc_definition;;
+                => nrel_main_idtf: [Определение: Живопись] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Definiton: Painting] (* <- lang_en;; *);;
+            <- definiton;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Живопись - искусство изображать действительность красками.];;
+                    -> rrel_example:
+                        [Painting is the art of depicting reality with paints.];;  
+                    -> rrel_example:
+                        [Живопись - произведения этого искусства.];;   
+                    -> rrel_example:
+                        [Paintings are works of this art.];;      
+                *);;
+        *);;
+
+concept_painting
+    => nrel_using_constants:
+        ...
+        (*
+            <- 
+                concept_art;;
+        *);;

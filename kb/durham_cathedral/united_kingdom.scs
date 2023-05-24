@@ -1,0 +1,9 @@
+uk <- concept_country;;
+
+uk 
+  => nrel_main_idtf: 
+    [United Kingdom] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Великобритания]
+    (* <- lang_ru;; *);;

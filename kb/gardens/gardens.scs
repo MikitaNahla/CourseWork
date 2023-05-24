@@ -1,0 +1,86 @@
+concept_building -> gardens;;
+gardens
+    => nrel_architector:
+        sinnaherib;;
+
+gardens
+    => nrel_style:
+        ancient_architecture;;
+
+gardens
+    => nrel_location:
+        mosul;;
+
+mosul
+    => nrel_location:
+        iraq;;
+
+gardens
+    => nrel_invention_year:
+        [64 года до н. э. — 21 год н.];;
+
+
+gardens
+  => nrel_main_idtf: 
+    [Hanging Gardens of Babylon] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Висячие сады Семирамиды]
+    (* <- lang_ru;; *);;
+
+gardens
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Висячие сады Семирамиды] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Hanging Gardens of Babylon] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Висяячие сады Семирамиды — одно из Семи чудес античного мира, которое представляло собой инженерное
+                         сооружение в Вавилоне с каскадом многоуровневых садов, где росли многочисленные породы деревьев,
+                          кустарников и виноградных лоз, производившее впечатление большой зелёной горы. Единственное из 
+                          Семи чудес, местонахождение которого окончательно не установлено и, более того, подвергается 
+                          сомнению сам факт его существования, поскольку не сохранилось никаких вавилонских текстов,
+                           в которых упоминаются эти сады, описания садов имеются лишь у поздних древнегреческих и римских
+                            авторов, а археологические раскопки в районе предполагаемого местонахождения садов также не
+                             дали результатов. ];;
+                    -> rrel_example:
+                        [Hanging Gardens of Babylon - one of the Seven Wonders of the Ancient World, which was an engineering
+                         structure in Babylon with a cascade of multi-level gardens, where numerous species of trees, shrubs
+                          and vines grew, giving the impression of a large green mountain. The only one of the Seven Wonders,
+                           the location of which has not been finally established and, moreover, the very fact of its
+                            existence is questioned, since no Babylonian texts that mention these gardens have been preserved,
+                             descriptions of the gardens are only found in late ancient Greek and Roman authors, and
+                              archaeological excavations in the area of the alleged location of the gardens also did not
+                               yield results.];;      
+                *);;
+        *);;
+
+gardens 
+    <-rrel_key_sc_element:
+        ...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Висячие сады Семирамиды)](*<-lang_ru;;*);
+		        [Pic. (Hanging Gardens of Babylon)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://gardens.jpg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+gardens
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              concept_architecture;
+              concept_building;
+              nrel_location;; 
+        *);;

@@ -1,0 +1,75 @@
+concept_building -> palace_dojei;;
+palace_dojei
+    => nrel_architector:
+        nicolo_baratteriero;;
+
+palace_dojei
+    => nrel_style:
+        romanian_architecture;;
+
+palace_dojei
+    => nrel_location:
+        venice;;
+
+venice
+    => nrel_location:
+        italy;;
+
+palace_dojei
+    => nrel_invention_year:
+        [1309—1424 годы];;
+
+
+palace_dojei
+  => nrel_main_idtf: 
+    [Doge's Palace] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Дворец Дожей]
+    (* <- lang_ru;; *);;
+
+palace_dojei
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Дворец Дожей] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Doge's Palace] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Дворец был существенно повреждён во время пожара 20 декабря 1577 года. В ходе последовавшей
+                         реставрации было решено оставить здание в прежнем романском стиле, вместо того, чтобы изменить
+                          его на более современный. ];;
+                    -> rrel_example:
+                        [The palace was significantly damaged during a fire on December 20, 1577. During the ensuing
+                         restoration, it was decided to leave the building in the same Romanian style, instead of changing
+                          it to a more modern one.];;      
+                *);;
+        *);;
+
+palace_dojei 
+    <-rrel_key_sc_element:
+        ...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Дворец Дожей)](*<-lang_ru;;*);
+		        [Pic. (Doge's Palace)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://palace_dojei.jpeg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+palace_dojei
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+                concept_building;
+                romanian_architecture;;
+        *);;

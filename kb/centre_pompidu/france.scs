@@ -1,0 +1,9 @@
+france <- concept_country;;
+
+france 
+  => nrel_main_idtf: 
+    [France] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Франция]
+    (* <- lang_ru;; *);;

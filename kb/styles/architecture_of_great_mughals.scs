@@ -1,0 +1,44 @@
+//Описание архтектуры Великих Моголов
+architecture_of_great_mughal <- concept_style;;
+
+architecture_of_great_mughal 
+  => nrel_main_idtf: 
+    [architecture_of_great_mughal] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [архитектура великих моголов]
+    (* <- lang_ru;; *);;
+
+architecture_of_great_mughal
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: архитектура великих моголов] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: architecture of grat mogolian] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Архитектура Великих Моголов - разнообразие архитектурных стилей существовавших на территории 
+                        современной Индии, процветавший при императорской династии Великих Моголов
+                         середины XVI до конца XVII века.
+                         ];;
+                        
+                    -> rrel_example:
+                        [The architecture of the Great Mughals - a variety of architectural
+                         styles that existed on the territory
+                        modern India, flourished under the Mughal imperial dynasty
+                         middle of the 16th to the end of the 17th century.];;         
+                *);;
+        *);;
+
+architecture_of_great_mughal
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              concept_architecture;
+              concept_style;
+              india;;  
+        *);;

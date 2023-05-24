@@ -1,0 +1,9 @@
+moscow <- concept_city;;
+
+moscow 
+  => nrel_main_idtf: 
+    [Moscow] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Москва]
+    (* <- lang_ru;; *);;

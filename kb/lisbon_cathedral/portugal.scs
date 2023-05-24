@@ -1,0 +1,9 @@
+portugal <- concept_country;;
+
+portugal 
+  => nrel_main_idtf: 
+    [Portugal] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Португалия]
+    (* <- lang_ru;; *);;

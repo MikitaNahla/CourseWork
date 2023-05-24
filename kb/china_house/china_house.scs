@@ -1,0 +1,75 @@
+concept_building -> china_house;;
+china_house
+    => nrel_architector:
+        iohannes;;
+
+china_house
+    => nrel_style:
+        rococo_architecture;;
+
+china_house
+    => nrel_location:
+        postdam;;
+
+postdam
+    => nrel_location:
+        germany;;
+
+china_house
+    => nrel_invention_year:
+        [1755 - 1764 гг.];;
+
+
+china_house
+  => nrel_main_idtf:
+    [Postdam's China House] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Постдамский китайский домик]
+    (* <- lang_ru;; *);;
+
+china_house
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Постдамский китайский домик] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Postdam's china house] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Сооружение было построено по приказу прусского короля Фридриха Великого для его летней резиденции.
+                         Проект в стиле шинуазри был поручен архитектору Иоганну Готтфриду Бюрингу. Затянувшееся строительство,
+                          начатое в 1755 году и продлившееся до 1764 года, было связано с Семилетней войной. ];;
+                    -> rrel_example:
+                        [The building was built by order of the Prussian king Frederick the Great for his summer residence.
+                         The chinoiserie project was entrusted to the architect Johann Gottfried Buhring. protracted construction,
+                          begun in 1755 and lasting until 1764, was associated with the Seven Years' War.];;      
+                *);;
+        *);;
+
+china_house 
+    <-rrel_key_sc_element:
+        ...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Китайский Домик)](*<-lang_ru;;*);
+		        [Pic. (China House)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://china_house.jpeg"(* => nrel_format:format_jpeg;; *);;
+	        *);;
+        *);;
+
+china_house
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              concept_building;
+              iohannes;;
+        *);;

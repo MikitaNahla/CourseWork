@@ -1,0 +1,80 @@
+concept_building -> mostorg;;
+mostorg
+    => nrel_architector:
+        victor_vesnin;
+        leonid_vesnin;
+        alexandr_vesnin;;
+
+mostorg
+    => nrel_style:
+        constructivist_architecture;;
+
+mostorg
+    => nrel_location:
+        moscow;;
+
+moscow
+    => nrel_location:
+        russia;;
+
+mostorg
+    => nrel_invention_year:
+        [1927 г.];;
+
+
+mostorg
+  => nrel_main_idtf: 
+    [Mostorg department store on Krasnaya Presnya] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Здание универмага Мосторга на Красной Пресне]
+    (* <- lang_ru;; *);;
+
+mostorg
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Здание универмага Мосторга на Красной Пресне] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: Mostorg department store on Krasnaya Presnya] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Здание универмага на Красной Пресне — здание в стиле конструктивизма, расположенное по адресу
+                         улица Красная Пресня, 48/2, строение 2 в Краснопресненском районе Москвы. Объект культурного
+                          наследия народов России регионального значения. ];;
+                    -> rrel_example:
+                        [The department store building on Krasnaya Presnya is a constructivist building located at
+                         Krasnaya Presnya street, 48/2, building 2 in the Krasnopresnensky district of Moscow. cultural object
+                          heritage of the peoples of Russia of regional importance.];;      
+                *);;
+        *);;
+
+mostorg 
+    <-rrel_key_sc_element:
+        ...
+        (*
+	        <-illustration;;
+	        => nrel_main_idtf:
+		        [Рис. (Здание универмага Мосторга на Красной Пресне)](*<-lang_ru;;*);
+		        [Pic. (Mostorg department store on Krasnaya Presnya)](*<-lang_en;;*);;
+	        <= nrel_sc_text_translation:
+            ...
+	        (*
+		        -> rrel_example: "file://mostorg.jpeg"(* => nrel_format:format_jpg;; *);;
+	        *);;
+        *);;
+
+mostorg
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+                concept_style;
+                concept_building;
+                constructivist_architecture;
+                nrel_location;
+                russia;;
+        *);;

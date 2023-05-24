@@ -1,0 +1,9 @@
+germany <- concept_country;;
+
+germany 
+  => nrel_main_idtf: 
+    [Germany] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Германия]
+    (* <- lang_ru;; *);;

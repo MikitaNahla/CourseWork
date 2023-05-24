@@ -1,0 +1,9 @@
+babylonia <- concept_country;;
+
+babylonia 
+  => nrel_main_idtf: 
+    [Babylonia] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Вавилония]
+    (* <- lang_ru;; *);;

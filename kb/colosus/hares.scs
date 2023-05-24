@@ -1,0 +1,41 @@
+hares <- concept_architect;;
+
+hares 
+  => nrel_main_idtf: 
+    [Hares] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Харес]
+    (* <- lang_ru;; *);;
+
+hares
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: о Харесе] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: about Haresus] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Харес или Харет — древнегреческий скульптор, архитектор, автор статуи Колосса Родосского, которая
+                         была одним из семи чудес света. Ученик Лисиппа. Считается основателем и первым представителем родосской
+                          школы скульпторов.];; 
+                    -> rrel_example:
+                        [Hares or Haret - an ancient Greek sculptor, architect, author of the statue of the Colossus of Rhodes, which
+                         was one of the seven wonders of the world. student of Lysippus. Considered the founder and first representative of the Rhodes
+                          sculpture schools.];;
+                *);;
+        *);;
+
+hares
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              concept_sculptor;
+              concept_sculpture;
+              concept_architect;; 
+        *);;

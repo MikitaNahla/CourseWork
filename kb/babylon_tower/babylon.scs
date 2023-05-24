@@ -1,0 +1,9 @@
+babylon <- concept_city;;
+
+babylon 
+  => nrel_main_idtf: 
+    [Babylon] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Вавилон]
+    (* <- lang_ru;; *);;

@@ -1,0 +1,9 @@
+venice <- concept_city;;
+
+venice
+  => nrel_main_idtf: 
+    [Venice] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Венеция]
+    (* <- lang_ru;; *);;

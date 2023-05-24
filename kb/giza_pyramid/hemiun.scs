@@ -1,0 +1,38 @@
+hemiun <- concept_architect;;
+
+hemiun 
+  => nrel_main_idtf: 
+    [Hemiun] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Хемиун]
+    (* <- lang_ru;; *);;
+
+hemiun
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: об Хемионе] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: about Hemiunes] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: 
+                ...
+                (*
+                    -> rrel_example:
+                        [Хемиун — древнеегипетский зодчий периода IV династии Древнего царства. Хемиун является предполагаемым
+                         архитектором Великой пирамиды фараона Хеопса в Гизе.];; 
+                    -> rrel_example:
+                        [Hemiun is an ancient Egyptian architect of the period of the IV dynasty of the Old Kingdom. Hemiun 
+                        is supposed architect of the Great Pyramid of Pharaoh Cheops at Giza.];;
+                *);;
+        *);;
+
+hemiun
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              concept_architect;
+              giza_pyramid;; 
+        *);;

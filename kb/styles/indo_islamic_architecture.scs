@@ -1,0 +1,41 @@
+indo_islamic_architecture <- concept_style;;
+
+indo_islamic_architecture 
+  => nrel_main_idtf: 
+    [indo_islamic_architecture] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Индо-исламская архитектура]
+    (* <- lang_ru;; *);;
+
+indo_islamic_architecture
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- statement;;
+                => nrel_main_idtf: [Утверждение: Индо-исламская архитектура] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Statement: indo-islamic architecture] (* <- lang_en;; *);;
+            <- statement;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Индо-исламская архитектура — архитектурная культура полуострова Индостан, возникшая
+                        в результате распространения ислама и исламской культуры в Индии, Пакистане и Бангладеш в
+                        средние века.
+                         ];;
+                        
+                    -> rrel_example:
+                        [Indo-Islamic architecture is the architectural culture of the Hindustan Peninsula, which arose 
+                        as a result of the spread of Islam and Islamic culture in India, Pakistan and Bangladesh during 
+                        the Middle Ages.];;         
+                *);;
+        *);;
+
+indo_islamic_architecture
+    => nrel_using_constants:
+        ...
+        (*
+            <-
+              concept_architecture;
+              india;;  
+        *);;

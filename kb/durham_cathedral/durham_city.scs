@@ -1,0 +1,9 @@
+durham <- concept_city;;
+
+durham 
+  => nrel_main_idtf: 
+    [Durham] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Дарем]
+    (* <- lang_ru;; *);;
