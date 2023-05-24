@@ -1,0 +1,58 @@
+//Описание класса архитектуры
+concept_architecture <- sc_node_class;;
+
+concept_architecture 
+  => nrel_main_idtf: 
+    [Architecture] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [Архитектура]
+    (* <- lang_ru;; *);;
+
+concept_architecture
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- sc_definition;;
+                => nrel_main_idtf: [Определение: Архитектура] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Definiton: Architecture] (* <- lang_en;; *);;
+            <- definiton;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Архитектура - строительное искусство, зодчество.];;
+                    -> rrel_example:
+                        [Architecture is construction art, architecture.];;  
+                    -> rrel_example:
+                        [Архитектура - стиль постройки.];;   
+                    -> rrel_example:
+                        [Architecture is building style.];;      
+                *);;
+        *);;
+
+concept_architecture
+    -> rrel_explored_relation:
+        nrel_architector;
+        nrel_invention_year;
+        nrel_location;
+        nrel_style;;
+
+concept_architecture
+    -> rrel_key_sc_element:
+        concept_building;
+        concept_architect;
+        concept_style;
+        concept_city;
+        concept_country;;  
+
+concept_architecture <- subject_domain;;
+
+concept_architecture 
+    => nrel_using_constansts:
+        ...
+        (*
+            <-
+                concept_art;
+                concept_style;
+                concept_building;;
+        *);;

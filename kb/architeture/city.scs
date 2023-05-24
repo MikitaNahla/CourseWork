@@ -1,0 +1,27 @@
+//Описание класса город
+concept_city <- sc_node_class;;
+
+concept_city 
+  => nrel_main_idtf: 
+    [сity] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [город]
+    (* <- lang_ru;; *);;
+
+concept_city
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- sc_definition;;
+                => nrel_main_idtf: [Определение: Город] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Definiton: City] (* <- lang_en;; *);;
+            <- definiton;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Город - крупный населённый пункт, административный, торговый и промышленный центр.];;
+                    -> rrel_example:
+                        [The city is a large settlement, administrative, commercial and industrial center.];;      
+                *);;
+        *);;

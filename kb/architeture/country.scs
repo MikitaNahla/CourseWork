@@ -1,0 +1,27 @@
+//Описание класса Страна
+concept_country <- sc_node_class;;
+
+concept_country
+    => nrel_main_idtf: 
+        [concept_country] 
+        (* <- lang_en;; *); 
+    => nrel_main_idtf:  
+        [страна]
+        (* <- lang_ru;; *);;
+
+concept_country
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- sc_definition;;
+                => nrel_main_idtf: [Определение: Страна] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Definiton: Country] (* <- lang_en;; *);;
+            <- definiton;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Страна - местность, территория.];;
+                    -> rrel_example:
+                        [Country - location, area.];;      
+                *);;
+        *);;

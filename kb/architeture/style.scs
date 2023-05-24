@@ -1,0 +1,39 @@
+//Описание архитектурного стиля
+concept_style <- sc_node_class;;
+
+concept_style 
+  => nrel_main_idtf: 
+    [style] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [стиль]
+    (* <- lang_ru;; *);;
+
+concept_style
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- sc_definition;;
+                => nrel_main_idtf: [Определение: Стиль] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Definiton: Style] (* <- lang_en;; *);;
+            <- definiton;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Стиль - совокупность признаков, характеризующих произведение искусства 
+                        определённого времени, направления или индивидуального творчества];;
+                    -> rrel_example:
+                        [Style - a set of features that characterize a work of art
+                        a certain time, direction or individual creativity];;      
+                *);;
+        *);;
+
+nrel_style <- sc_node_norole_relation;;
+
+nrel_style 
+  => nrel_main_idtf: 
+    [nrel_style] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [в стиле* ]
+    (* <- lang_ru;; *);;

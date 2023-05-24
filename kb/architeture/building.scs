@@ -1,0 +1,35 @@
+//Описание класса строения
+concept_building <- sc_node_class;;
+
+concept_building
+  => nrel_main_idtf: 
+    [building] 
+    (* <- lang_en;; *); 
+  => nrel_main_idtf:  
+    [здание]
+    (* <- lang_ru;; *);;
+
+concept_building
+    <- rrel_key_sc_element: 
+        ...
+        (*
+            <- sc_definition;;
+                => nrel_main_idtf: [Определение: Здание] (* <- lang_ru;; *);;
+                => nrel_main_idtf: [Definiton: Building] (* <- lang_en;; *);;
+            <- definiton;;
+                <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        [Здание - архитектурное сооружение, постройка, дом.];;
+                    -> rrel_example:
+                        [Building - an architectural structure, building, house.];;      
+                *);;
+        *);;
+
+concept_building
+    => nrel_using_constansts:
+        ...
+        (*
+            <-
+                concept_building;;
+        *);;
