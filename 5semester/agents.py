@@ -2,10 +2,14 @@ from neo4j import GraphDatabase
 import asyncio
 
 
+# Агент поиска произведений по жанру
+
 class FindGenreAgent:
     def __init__(self, genre, uri, username, password):
         self.driver = GraphDatabase.driver(uri, auth=(username, password))
         self.genre = genre
+
+    # Функция нахождения произведений по жанру
 
     async def find_genre_agent(self):
         with self.driver.session() as session:
@@ -15,6 +19,8 @@ class FindGenreAgent:
             print(pictures)
 
 
+# Агент добавления новых знаний в бз (работает для двух узлов и одного отношения)
+
 class AddNewKnowledgeAgent:
     def __init__(self, first_node, second_node, relation, uri, username, password):
         self.driver = GraphDatabase.driver(uri, auth=(username, password))
@@ -22,12 +28,16 @@ class AddNewKnowledgeAgent:
         self.second_node = second_node
         self.relation = relation
 
+    # Функция проверки на существование узла
+
     def check_node_existence(self, node):
         with self.driver.session() as session:
             result = session.run(
                 f"MATCH (n:{node[0]}) WHERE n.{node[1]} = '{node[2]}' RETURN COUNT(n)")
             count = result.single()[0]
             return count == 0
+
+    # Функция проверки на существование отношения
 
     def check_relation_existence(self):
         with self.driver.session() as session:
@@ -39,12 +49,16 @@ class AddNewKnowledgeAgent:
             exists = result.single()[0]
             return exists
 
+    # Функция добавления нового узла
+
     def add_new_node(self, node):
         if self.check_node_existence(node):
             with self.driver.session() as session:
                 session.run(f"CREATE (n:{node[0]}" + '{' + f"{node[1]}:'{node[2]}'"+'})')
         else:
             print('This node is already exist')
+
+    # Функция добавления нового отношения
 
     def add_new_relation(self):
         if not self.check_relation_existence():
@@ -57,6 +71,8 @@ class AddNewKnowledgeAgent:
                             )
         else:
             print("This relation between this two nodes is already exist")
+
+    # Функция добавления нового знания
 
     async def add_new_knowledge(self):
         sets = []
